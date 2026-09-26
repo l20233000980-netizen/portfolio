@@ -1,7 +1,7 @@
 const hero = document.querySelector('.hero');
 const layer = document.querySelector('.trail-layer');
 const projects = [...document.querySelectorAll('.project')];
-const sources = Array.from({length: 11}, (_, i) => `assets/photo-${i + 1}.jpg`);
+const sources = Array.from({length: 11}, (_, i) => `photo-${i + 1}.jpg`);
 const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
 let lastX = -1000, lastY = -1000, lastTime = 0, index = 0, resetTimer;
 sources.forEach(src => { const image = new Image(); image.src = src; });
